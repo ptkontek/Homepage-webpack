@@ -1,7 +1,7 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "modules/about.scss";
 @import "modules/ideas.scss";
 @import "modules/navigation.scss";
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lora', serif;
   background: rgb(82, 121, 111);
   background: linear-gradient(
     164deg,
