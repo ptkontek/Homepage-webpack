@@ -1,0 +1,39 @@
+.about {
+  padding: 5px;
+  &__header {
+    color: #40916c;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  &__paragraph {
+    color: #081c15;
+    padding: 15px 0px;
+    margin-bottom: 0px;
+  }
+  &__picture {
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding: 5px;
+    overflow: hidden;
+    &__paragraph {
+      color: #081c15;
+      padding: 15px 15px;
+    }
+    &__picture {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      float: left;
+      float: right;
+      /*teraz juz nie stosuje się, teraz flex box*/
+      margin: 0 0 0 16px;
+    }
+  }
+}

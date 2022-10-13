@@ -1,153 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--jaki rodzaj html-->
+<html lang="pl">
+  <!--w jakim języku strona-->
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <title>Document</title>
   </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+
+  <body class="homepage">
+    <header class="header">
+      <button class="menu menu--js" aria-label="open menu">MENU</button>
+      <nav class="navigation navigation--js">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="rower.html">Rower</a>
+        <a class="navigation__link" href="gory.html">Góry</a>
+        <a class="navigation__link" href="namiot.html">Namiot</a>
+      </nav>
+    </header>
+    <main id="top" class="main">
+      <header>
+        <h1 class="header__title header__title--js">
+          Patrycja Kontek - Strona domowa
+        </h1>
+        <p>Dzień się zaczął <span class="time--js"></span></p>
+      </header>
+      <section class="about">
+        <!--<div class="box"> Co ten frontend</div>-->
+        <h2 class="about__header">Kim jestem?</h2>
+        <p class="about__paragraph about__paragraph--js">
+          <img src="../assets/img/pat.jpg" alt="Patrycja" class="about__picture" />
+          Cześć! Witam Cię na mojej stronie z <b>ciekawymi pomysłami</b>.
+          Nazywam się Patrycja i uwielbiam <strong>góry</strong> oraz jazdę na
+          <em>rowerze</em>. Z wykształcenia jestem geodetą, jednak to mi nie
+          wystarcza i próbuję swoich sił w programowaniu. <br />
+        </p>
+      </section>
+
+      <section class="ideas" id="ideas">
+        <h2 class="ideas__header">Pomysły</h2>
+        <article class="ideas__article">
+          <h3 class="ideas__header_title">
+            Gdzie na rower w wakacje? Góry i południowa Polska - odkryj
+            najlepsze trasy
+          </h3>
+          <div class="grid">
+            <p class="ideas__paragraph">
+              Południe Polski to oczywiście góry - tak zróżnicowane, jak tylko
+              można sobie wymarzyć. Znajdziecie tu zarówno trudne trasy dla
+              wytrawnych kolarzy górskich, jak i szlaki na rodzinną wycieczkę.
+              <br />
+            </p>
+            <div>
+              <h4>Propozycje szlaków rowerowych:</h4>
+              <ul class="ideas__list">
+                <li class="ideas__list-item">Bieszczady</li>
+                <li class="ideas__list-item">
+                  Tatry:
+                  <ol>
+                    <li>Szlak Wokół Tatr - wersja turystyczna</li>
+                    <li>Szlak Wokół Tatr - wersja grawelowa</li>
+                  </ol>
+                </li>
+                <li class="ideas__list-item">Pogórze Karpackie</li>
+                <li class="ideas__list-item">Szlak Orlich Gniazd</li>
+              </ul>
+            </div>
+          </div>
+          <a class="ideas__link" href="rower.html">Przejdź do artykułu</a>
+        </article>
+        <article class="ideas__article">
+          <h3 class="ideas__header_title">Widokowe szlaki w Tatrach</h3>
+          <div class="grid">
+            <p class="ideas__paragraph">
+              Jak ze wszystkich dostępnych turystycznie szczytów Tatr wybrać te
+              najbardziej widokowych? Temat trudny i z góry skazany na
+              zastrzeżenia, szczególnie tych, którzy choć trochę skosztowali
+              Tatr i mają już swoje typy. Podjęliśmy jednak to ryzyko i
+              stworzyliśmy subiektywną listę najpiękniejszych widokowo tras
+              tatrzańskich. Przygotowując nasze propozycje braliśmy pod uwagę
+              nie tylko widoki ze szczytów, ale również dodatkowe elementy
+              szlaku, wyróżniki, które mogą czymś zaskoczyć, zachwycić i
+              dodatkowo urozmaicić naszą wędrówkę.
+            </p>
+            <div>
+              <h4>Propozycje szlaków górskich w Tatrach:</h4>
+              <ol>
+                <li>Mała Wysoka</li>
+                <li>Koprowy Wierch</li>
+                <li>Granaty</li>
+                <li>Rysy</li>
+                <li>Szpiglasowy Wierch</li>
+                <li>Pachoł</li>
+              </ol>
+            </div>
+          </div>
+          <a class="ideas__link" href="gory.html">Przejdź do artykułu</a>
+        </article>
+        <article class="ideas__article">
+          <h3 class="ideas__header_title">Gdzie pod namiot?</h3>
+          <div class="grid">
+            <p class="ideas__paragraph">
+              Planując wakacje pod namiotem, stajemy przed nie lada zadaniem:
+              czym kierować się przy wyborze idealnego miejsca na wypoczynek? W
+              którą część Polski się udać i gdzie warto pojechać pod namiot?
+              Jedno jest pewne: z uwagi na atrakcyjne położenie naszego kraju,
+              możliwości nie brakuje. Dodatkowo dzięki dużej ilości campingów i
+              pól namiotowych w atrakcyjnych lokalizacjach, coś dla siebie
+              znajdą zarówno ci, którzy chcą w spokoju wypocząć na łonie
+              przyrody, jak i miłośnicy aktywnego wypoczynku oraz lokalnych
+              atrakcji.
+            </p>
+            <div>
+              <h4>Propozycje miejsc namiotowych</h4>
+              <dl>
+                <dt>Camp66</dt>
+                <dd>
+                  Camping w otoczeniu górskiego krajobrazu w województwie
+                  Dolnośląskim
+                </dd>
+                <dt>Camping Łęg</dt>
+                <dd>Camping nad górską rzeką Białka w Pieninach</dd>
+                <dt>Camping Polana Sosny</dt>
+                <dd>Camping położony tuż nad Dunajcem w Niedzicy</dd>
+              </dl>
+            </div>
+          </div>
+          <a class="ideas__link" href="namiot.html">Przejdź do artykułu</a>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="#top" class="footer__top">Na górę</a>
+      Strona domowa Patrycji Kontek.
+    </footer>
   </body>
 </html>

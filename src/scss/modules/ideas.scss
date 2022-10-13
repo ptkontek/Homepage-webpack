@@ -1,0 +1,68 @@
+.ideas {
+  padding: 5px;
+  &__header {
+    color: #083a23;
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  &__header-title {
+    font-size: 20px;
+  }
+  &__paragraph {
+    color: 081c15;
+    padding: 5px 15px;
+    /*border-radius: 50%; kółko */
+  }
+  &__link {
+    text-decoration: none;
+    color: #31572c;
+    /*color: inherit; kolor dziedziczony z rodzica*/
+    &:focus {
+      border: 1px solid #31572c;
+    }
+    &:visited {
+      color: #375a32;
+    }
+  }
+  &__list {
+    list-style: square;
+  }
+  &__article {
+    border-bottom: 2px dotted #31572c;
+    padding-bottom: 10px;
+  }
+  &__h2 {
+    &::after,
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background: #081c15;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin: 10px;
+    }
+  }
+  &__table {
+    margin: 20px 0px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  &__table td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 3px 0px;
+  }
+  &__table th {
+    text-align: center;
+    padding: 10px 0px;
+    border: 1px solid black;
+  }
+}
+
+@media (min-width: 768px) {
+  .ideas {
+    clear: both;
+  }
+}
