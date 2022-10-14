@@ -170,3 +170,43 @@ menu.addEventListener("click", () => {
 const startOfDay = moment().startOf('day').fromNow();
 const time = document.querySelector('.time--js');
 time.innerHTML = startOfDay;
+
+//były ciastka
+document.cookie = 'name = pati';
+document.cookie = 'test = patrycja';
+
+//localstorage (trwalsze) i sessionstorage(do zamknięcia przeglądarki)
+localStorage.setItem('human','pati');
+console.log(localStorage.getItem('human')); //pobranie
+localStorage.removeItem('human'); //usunięcie
+
+//obiekt -> JSON string
+//zakodowanie obiektu - zwykły napis, nie obiekt
+ localStorage.setItem('nowyKlucz', JSON.stringify({name: 'patka'}));
+ console.log(localStorage.getItem('nowyKlucz')); 
+
+ //odkodowanie PARSE - mamy obiekt
+ const myResult1 = localStorage.getItem('nowyKlucz');
+ console.log(JSON.parse(myResult1));
+ //można modyfikowac jak obiekt
+ const myNewObiect = JSON.parse(myResult1);
+ myNewObiect.surname = 'kontek';
+ console.log(myNewObiect);
+
+
+ const entry = localStorage.getItem('entry');
+ let result1 = '';
+
+ if (entry) {
+  result1 = entry;
+ }
+
+ const entryInput = document.querySelector('.entry--js');
+ entryInput.value = result1;
+
+ const button = document.querySelector('.action--js');
+ console.log(button);
+
+ button.addEventListener('click', () => {
+  localStorage.setItem('entry', entryInput.value);
+ });
