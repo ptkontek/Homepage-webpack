@@ -1,18 +1,11 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](./gh/rower.jpg)
 
-# WTF Webpack Starter Kit 
+# Strona domowa Patrycji Kontek
 
-Simple toolkit for your static websites development.
+Cześć! Witam Cię na mojej stronie z ciekawymi pomysłami. Nazywam się Patrycja i uwielbiam góry oraz jazdę na rowerze. Z wykształcenia jestem geodetą, jednak to mi nie wystarcza i próbuję swoich sił w programowaniu.
 
-## How to use it?
+*Projekt stworzony do nauki front-endu.*
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+## Tematyka
 
-## Available scripts
-
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
-
+Zawiera podstrony na temat tras góskich, rowerowych oraz miejsc namiotowych.
