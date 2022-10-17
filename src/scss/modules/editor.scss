@@ -1,0 +1,45 @@
+
+
+.editor {
+
+
+  width: 100%;
+  max-width: 736px;
+  &__header {
+    font-size: 36px;
+    margin: 0 0 30px;
+  }
+}
+
+.form {
+  &__buttons {
+    margin: 16px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__textarea {
+    width: 100%;
+    min-height: 250px;
+    border: 1px solid #a1a4b1;
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 14px;
+  }
+}
+
+.button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #121232;
+  background: #fafafa;
+  border: 1px solid #121232;
+  border-radius: 4px;
+  padding: 12px 16px;
+  &--save {
+    color: #fafafa;
+    background: #121232;
+    border: 1px solid #121232;
+    margin-left: 28px;
+  }
+}
