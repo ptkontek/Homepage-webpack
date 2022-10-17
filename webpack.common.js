@@ -5,6 +5,10 @@ module.exports = {
   /* here you can define another js file */
   entry: {
     index: "./src/js/index.js",
+    moment: "./src/js/moment.js",
+    cookies: "./src/js/cookies.js",
+    sessionstorage: "./src/js/sessionstorage.js",
+    menu: "./src/js/menu.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -76,26 +80,32 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index", "moment"],
+      chunks: ["menu"],
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/gory.html",
       inject: true,
-      chunks: ["index"],
+      chunks: ["menu"],
       filename: "gory.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/rower.html",
       inject: true,
-      chunks: ["index"],
+      chunks: ["menu"],
       filename: "rower.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/namiot.html",
       inject: true,
-      chunks: ["index"],
+      chunks: ["menu"],
       filename: "namiot.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/kontakt.html",
+      inject: true,
+      chunks: ["moment","cookies","sessionstorage","menu"],
+      filename: "kontakt.html",
     }),
   ],
 };
