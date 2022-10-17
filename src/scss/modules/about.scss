@@ -5,6 +5,16 @@
     font-size: 24px;
     margin-top: 10px;
     margin-bottom: 0px;
+    transition: opacity, transform 2s cubic-bezier(0, 0, 0.28, 1.05);
+    opacity: 0.7;
+    will-change: opacity; /// przekazanie informacji, że własność będzie zmienialna za pomogą animacji
+     transform-origin: top left;
+    &:hover {
+      opacity: 1;
+      transform: translate(10px, 10px);
+      ///transform: rotate(50deg);
+      transform: scale(1.1);
+    }
   }
   &__paragraph {
     color: #081c15;

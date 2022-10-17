@@ -1,3 +1,38 @@
+/*@keyframes emoji {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);  
+  }
+}
+
+@keyframes emoji {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3) rotate(3deg);
+  }
+  100%{
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}to samo co poniżej - ale bez uzycia alternate*/
+
+@keyframes emoji {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.3) rotate(3deg);
+  }
+}
+
 .ideas {
   padding: 5px;
   &__header {
@@ -6,17 +41,26 @@
     margin-top: 0px;
   }
   &__header-title {
-    font-size: 20px;
+    font-size: 18px;
   }
   &__paragraph {
     color: 081c15;
     padding: 5px 15px;
     /*border-radius: 50%; kółko */
   }
+  &__title {
+    font-size: 26px;
+    text-align: center;
+    &--emoji {
+      padding: 10px;
+      display: inline-block; ///musi być blok
+      animation: emoji 1s ease-in-out infinite alternate; //reverse - odwrócenie, forwards - zatrzymanie animacji
+    }
+  }
+
   &__link {
     text-decoration: none;
     color: #31572c;
-    /*color: inherit; kolor dziedziczony z rodzica*/
     &:focus {
       border: 1px solid #31572c;
     }
@@ -32,6 +76,12 @@
     padding-bottom: 10px;
   }
   &__h2 {
+    transition: color 1s linear, padding 0.4s ease-in-out;
+    &:hover {
+      color: rgb(22, 99, 22);
+      padding: 5px;
+    }
+
     &::after,
     &::before {
       content: "";
