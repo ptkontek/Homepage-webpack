@@ -20,10 +20,7 @@
       font-weight: 800;
     }
   }
-}
-
-@media (min-width: 768px) {
-  .navigation {
+  @media (min-width: 768px) {
     position: fixed;
     width: 100%;
     top: 0;

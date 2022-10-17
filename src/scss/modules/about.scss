@@ -16,10 +16,7 @@
     width: 100%;
     display: block;
   }
-}
-
-@media (min-width: 768px) {
-  .about {
+  @media (min-width: 768px) {
     padding: 5px;
     overflow: hidden;
     &__paragraph {
