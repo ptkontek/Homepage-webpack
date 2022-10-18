@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PK: Kontakt</title>
+    <title>Kontakt</title>
   </head>
 
   <body>
@@ -25,7 +25,9 @@
     <main class="main">
       <header>
         <h1 class="header__title">Patrycja Kontek</h1>
-        <p class="person"><b>email:</b> patrycja.kontek.programista@gmail.com</p>
+        <p class="person">
+          <b>email:</b> patrycja.kontek.programista@gmail.com
+        </p>
         <p class="person">
           W sieci:
           <a
@@ -33,29 +35,31 @@
             href="https://www.facebook.com/patrycja.kontek"
             >Facebook</a
           >,
-          <a class="person__link" href="https://github.com/ptkontek">GitHub</a
-          >,
+          <a class="person__link" href="https://github.com/ptkontek">GitHub</a>,
           <a
             class="person__link"
             href="https://www.instagram.com/patrycja_kontek/"
             >Instagram</a
           >.
+          <img src="../assets/img/PK.png" alt="Patrycja" class="logo" />
         </p>
       </header>
-      <h2 class="main__header">Edytor zapisujący session storage</h2>
-      <form class="form">
-        <textarea
-          class="form__textarea textarea--js"
-          aria-label="Enter your thoughts"
-          placeholder="Enter your thoughts"
-        ></textarea>
-        <div class="form__buttons">
-          <button class="button load--js">
-            Load<span class="info--js"></span>
-          </button>
-          <button class="button button--save save--js">Save</button>
-        </div>
-      </form>
+      <div>
+        <h2 class="main__header">Edytor zapisujący session storage</h2>
+        <form class="form">
+          <textarea
+            class="form__textarea textarea--js"
+            aria-label="Enter your thoughts"
+            placeholder="Enter your thoughts"
+          ></textarea>
+          <div class="form__buttons">
+            <button class="button load--js">
+              Load<span class="info--js"></span>
+            </button>
+            <button class="button button--save save--js">Save</button>
+          </div>
+        </form>
+      </div>
       <p>Dzień się zaczął <span class="time--js"></span></p>
       <input class="entry--js" />
       <button class="action--js">Zapisz</button>

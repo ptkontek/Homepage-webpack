@@ -1,10 +1,7 @@
 import "../scss/main.scss";
 
-// uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
-
-/* place your code below */
+import {registerSW} from './pwa.js';
+registerSW();
 
 console.log("Witaj przybyszu");
 const firstName = "Patrycja Kontek";
@@ -157,10 +154,3 @@ switch (myNumber) {
 
 const result = 32 > 20 ? true : false; //moga byc obiekty i słowa kluczowe zamiast false i true
 console.log(result);
-
-const menu = document.querySelector(".menu--js");
-
-menu.addEventListener("click", () => {
-  const nav = document.querySelector(".navigation--js");
-  nav.classList.toggle("navigation--open");
-});
