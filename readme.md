@@ -1,4 +1,4 @@
-![image](./gh/rower.jpg)
+![image](./gh/PK.png)
 
 # Strona domowa Patrycji Kontek
 
