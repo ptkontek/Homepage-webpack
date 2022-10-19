@@ -2,7 +2,7 @@ var VERSION = '24';
 
 this.addEventListener('install', function(e) {
   e.waitUntil(caches.open(VERSION).then(cache => {
-    return cache.addAll([]);
+    return cache.addAll([]); //tu można wpisac pliki, które chcemy zeby były dostępne ofline
   }))
 });
 
