@@ -10,6 +10,7 @@ module.exports = {
     sessionstorage: "./src/js/sessionstorage.js",
     menu: "./src/js/menu.js",
     nauka: "./src/js/nauka.js",
+    API: "./src/js/API.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -105,7 +106,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/kontakt.html",
       inject: true,
-      chunks: ["index","moment","cookies","sessionstorage","menu"],
+      chunks: ["index","moment","cookies","sessionstorage","menu","API"],
       filename: "kontakt.html",
     }),
   ],
