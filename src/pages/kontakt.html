@@ -65,8 +65,49 @@
         </form>
       </div>
       <p>Dzień się zaczął <span class="time--js"></span></p>
+
       <input class="entry--js" />
       <button class="action--js">Zapisz</button>
+
+      <div class="weather">
+        <h3>Pogoda</h3>
+        <table class="table">
+          <tbody>
+            <tr class="table__info">
+              <td><img src="#" id="currentWeatherImg"/></td>
+              <td><a href="#" id="locationLink"></a></td>
+            </tr>
+            <tr class="table__info">
+              <td>Temperatura:</td>
+              <td><span id="temp"></span></td>
+            </tr>
+            <tr class="table__info">
+              <td>Wilgotność:</td>
+              <td><span id="humidity"></span></td>
+            </tr>
+            <tr class="table__info">
+              <td>Ciśnienie:</td>
+              <td><span id="pressure"></span></td>
+            </tr>
+            <tr class="table__info">
+              <td>Zachmurzenie:</td>
+              <td><span id="clouds"></span></td>
+            </tr>
+            <tr class="table__info">
+              <td>Prędkość wiatru:</td>
+              <td><span id="windSpeed"></span></td>
+            </tr>
+            <tr class="table__info">
+              <td>Wschód słońca:</td>
+              <td><span id="sunRise"></span></td>
+            </tr>
+            <tr class="table__info">
+              <td>Zachód słońca:</td>
+              <td><span id="sunSet"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
     <footer class="footer">Strona domowa Patrycji Kontek.</footer>
   </body>

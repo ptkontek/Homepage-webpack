@@ -11,6 +11,7 @@ module.exports = {
     menu: "./src/js/menu.js",
     nauka: "./src/js/nauka.js",
     API: "./src/js/API.js",
+    weather: "./src/js/weather.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -106,7 +107,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/kontakt.html",
       inject: true,
-      chunks: ["index","moment","cookies","sessionstorage","menu","API"],
+      chunks: ["index","moment","cookies","sessionstorage","menu","API","weather"],
       filename: "kontakt.html",
     }),
   ],
