@@ -40,15 +40,14 @@ function updateWeatherData(data) {
   const sunRise = new Date(data.sys.sunrise * 1000); //w sekundach
   const sunSet = new Date(data.sys.sunset * 1000); //ilosc sekund od 1.01.1970
 
-  document.getElementById("temp").innerHTML = temp;
-  document.getElementById("humidity").innerHTML = humidity;
-  document.getElementById("pressure").innerHTML = pressure;
-  document.getElementById("humidity").innerHTML = humidity;
-  document.getElementById("windSpeed").innerHTML = windSpeed;
-  document.getElementById("clouds").innerHTML = clouds;
-  document.getElementById("sunRise").innerHTML =
+  document.getElementById("temp").innerHTML = temp + " °C";
+  document.getElementById("humidity").innerHTML = humidity + " %";
+  document.getElementById("pressure").innerHTML = pressure + " hPa";
+  document.getElementById("windSpeed").innerHTML = windSpeed + " m/s";
+  document.getElementById("clouds").innerHTML = clouds + " %";
+  document.getElementById("sunRise").innerHTML ="godz: " +
     sunRise.getHours() + ":" + sunRise.getMinutes(); //cała data
-  document.getElementById("sunSet").innerHTML =
+  document.getElementById("sunSet").innerHTML ="godz: " +
     sunSet.getHours() + ":" + sunSet.getMinutes();
 
   let imgUrl =

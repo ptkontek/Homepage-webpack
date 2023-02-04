@@ -1,46 +1,30 @@
-.about {
-  padding: 5px;
-  &__header {
-    color: #40916c;
-    font-size: 24px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    transition: opacity, transform 2s cubic-bezier(0, 0, 0.28, 1.05);
-    opacity: 0.7;
-    will-change: opacity; /// przekazanie informacji, że własność będzie zmienialna za pomogą animacji
-     transform-origin: top left;
-    &:hover {
-      opacity: 1;
-      transform: translate(10px, 10px);
-      ///transform: rotate(50deg);
-      transform: scale(1.1);
-    }
+.weather {
+  background-color: rgba(255, 255, 255, 0.877);
+  padding: 20px;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 1px 1px 10px 0 grey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  table {
+    border-collapse: collapse;
   }
-  &__paragraph {
-    color: #081c15;
-    padding: 15px 0px;
-    margin-bottom: 0px;
-  }
-  &__picture {
-    margin-bottom: 20px;
-    width: 100%;
-    display: block;
-  }
-  @media (min-width: 768px) {
-    padding: 5px;
-    overflow: hidden;
-    &__paragraph {
-      color: #081c15;
-      padding: 15px 15px;
-    }
-    &__picture {
-      width: 100%;
-      max-width: 500px;
-      display: block;
-      float: left;
-      float: right;
-      /*teraz juz nie stosuje się, teraz flex box*/
-      margin: 0 0 0 16px;
+}
+.table {
+  &__info {
+    td {
+      border: 1px solid rgb(187, 187, 187);
+      padding: 5px;
+      margin: 0px;
+      font-size: 12px;
+      &:hover{
+        background-color: white;
+        cursor: pointer;
+      }
     }
   }
 }
